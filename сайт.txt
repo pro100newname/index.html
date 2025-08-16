@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инновации для вашего бизнеса</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .section img {
+            width: 100%;
+            max-width: 600px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .services, .reviews, .contact-form {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+        }
+        .service-item, .review-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-item h3, .review-item h3 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .services, .reviews {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать в мир инноваций!</h1>
+    <p>Технологии, которые меняют вашу реальность. Присоединяйтесь к нам сегодня!</p>
+    <a href="#about" class="button">Узнать больше</a>
+</header>
+
+<section id="about" class="section">
+    <h2>Кто мы?</h2>
+    <p>Мы — команда мечтателей и создателей, объединённых одной целью: сделать будущее доступным для каждого. Вдохновляемся новыми технологиями и превращаем их в простые и понятные решения для бизнеса и повседневной жизни.</p>
+    <img src="https://via.placeholder.com/600x300" alt="О нас">
+    <a href="#services" class="button">Наши продукты</a>
+</section>
+
+<section id="services" class="section">
+    <h2>Что мы предлагаем?</h2>
+    <div class="services">
+        <div class="service-item">
+            <h3>Разработка сайтов</h3>
+            <p>Уникальные, адаптированные под мобильные устройства и с быстрой загрузкой.</p>
+        </div>
+        <div class="service-item">
+            <h3>Маркетинговые стратегии</h3>
+            <p>Привлечение клиентов через РСЯ, настройка таргетинга и аналитика.</p>
+        </div>
+        <div class="service-item">
+            <h3>Консалтинг и анализ</h3>
+            <p>Помогаем компаниям понять рынок и выработать стратегии роста.</p>
+        </div>
+        <div class="service-item">
+            <h3>Интерактивные решения</h3>
+            <p>Создание креативных приложений и онлайн-игр для повышения вовлеченности.</p>
+        </div>
+    </div>
+    <a href="#contact" class="button">Заказать консультацию</a>
+</section>
+
+<section id="reviews" class="section">
+    <h2>Что говорят наши клиенты?</h2>
+    <div class="reviews">
+        <div class="review-item">
+            <h3>Алексей, Санкт-Петербург</h3>
+            <p>“С вами приятно работать! Всё было сделано вовремя и на высшем уровне.”</p>
+        </div>
+        <div class="review-item">
+            <h3>Мария, маркетолог</h3>
+            <p>“Супер! Мы заметили рост продаж уже через месяц.”</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Свяжитесь с нами</h2>
+    <p>Готовы обсудить проект? Напишите нам, и мы предложим решение, которое подойдёт именно вам!</p>
+    <form action="#" class="contact-form">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Ваш телефон" required>
+        <textarea placeholder="Сообщение" required></textarea>
+        <button type="submit" class="button">Отправить сообщение</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025. Все права защищены.</p>
+    <p>Следите за нами в соцсетях:</p>
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Telegram</a>
+</footer>
+
+</body>
+</html>
