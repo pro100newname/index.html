@@ -1,0 +1,19 @@
+name: Deploy static content to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Запускать при изменении ветки main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Используется последняя версия Ubuntu
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages  # Укажите ветку, куда будет развернут сайт
+        folder: .  # Укажите папку, которая будет развернута (обычно это корневая папка с вашим index.html)
