@@ -1,0 +1,63 @@
+import customtkinter as ctk
+import logging
+from ui.obs_interface import OBSLikeInterface
+
+if __name__ == "__main__":
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler('who_calls_ultimate.log'),
+            logging.StreamHandler()
+        ]
+    )
+    
+    app = OBSLikeInterface()
+    app.protocol("WM_DELETE_WINDOW", app.on_closing)
+    app.mainloop()
+{
+  "websites": [
+    {
+      "url": "https://who-calls.ru",
+      "enabled": true
+    }
+  ],
+  "click_ads": true,
+  "search_settings": {
+    "enable_search": true,
+    "search_speed": "normal",
+    "search_depth": 3,
+    "search_type": "standard"
+  },
+  "schedule": {
+    "enabled": false,
+    "start_time": "09:00",
+    "end_time": "18:00",
+    "days": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "daily_limit": 100,
+    "enable_breaks": true,
+    "break_duration": 5,
+    "break_interval": 30
+  },
+  "ai_settings": {
+    "enabled": true,
+    "level": "advanced",
+    "learning": true,
+    "learning_speed": "normal",
+    "optimizations": [
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+}
+2025-09-02 01:32:40,846 - ERROR - ������ ���������� ����������: 'NoneType' object has no attribute 'execute'
