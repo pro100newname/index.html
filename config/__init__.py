@@ -1,1 +1,0 @@
-from .settings import DEFAULT_SETTINGS
